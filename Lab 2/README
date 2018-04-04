@@ -1,0 +1,15 @@
+ @Name: Navjot Sandhu
+ @StudentID: 500792413
+ @ComputerID: nssandhu
+ @Date: 2018-01-21
+ @Project: Lab 1
+
+Part 1:
+All the requirements of this laboratory were fulfilled, this was done by analyzing all the command line inputs to determine if they fit the conditions. The first if loop was used to determine if there was one argument given on the command line, the argument given would be set as a number of disks, another if statment was used to determine if the number of disks(n) was a valid integer value as n didn't have a limit. If the argument was anything besides an integer value, the output would display "incorrect invocation" and terminate the program. The next if statement determined if there were 3 arguments in the code.A for loop was nested within the if loop that tested whether all three inputs were valid integers, if not the output would display "incorrect invocation" and terminate the program.For the example "towers 2 3 1", after it was determined that they were all integer values, the first value was set to n(n=2), the second was set to from(from = 3), and the third was set to dest(dest = 1) using the atoi function to convert the inputs into integers. After setting the values, another if loop was used to determine if the values of from and dest were both less than or equal to 3 and greater than or equal to 1, and to make sure dest didn't equal from. If the input values were less than 1 and greater than 3, and if the destination and from values were different the program would complete the algorithm,Otherwise the output would display "incorrect invocation" and terminate the program. Through a combination of multiple nested if statements, for loops, atoi functions all requirements of the lab were met.
+
+Part 2:
+1.The first recursive call to towers() will be invoked as towers(4,2,1) based on the method, towers(n-1, from, spare).
+2. The amount of recursive calls to towers() that need to be made in order to return to the initial invocation towers(5,2,3) would be 31 based on the equation given 3 pegs and n disks, the minimum amount to solve is 2^n-1=2^5-1 = 31.
+3.Once towers(5,2,3) has invoked its first recursive call to towers() and this invocation has returned, what will be printed to stdout is 2 3 because what is actually being moved is a disk from peg 2 to peg 3.
+4.The first recursive call to towers() will be invoked as towers(3,2,3) based on the method, towers(n-1, from, spare) and the first recursive call to was towers(4,2,1).
+
